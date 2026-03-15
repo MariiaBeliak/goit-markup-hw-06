@@ -42,6 +42,11 @@
                     </li>
                 </ul>
             </address>
+            <button type="button" class="burger-btn" aria-label="Open mobile menu">
+                <svg class="burger-icon" width="24" height="24">
+                    <use href="./images/icons.svg#icon-menu"></use>
+                </svg>
+            </button>
         </div>
     </header>
 
@@ -115,7 +120,7 @@
 
                 <ul class="team-list">
                     <li class="team-item">
-                        <img class="team-photo" src="./images/Mark.jpg" alt="Mark`s photo" width="264">
+                        <img class="team-photo" src="./images/Mark.jpg" srcset="./images/Mark.jpg 1x, ./images/Mark@2x.jpg 2x" alt="Mark`s photo" width="264">
                         <div class="team-text-wrap">
 
                             <div class="team-info-wrap">
@@ -161,7 +166,7 @@
                     </li>
 
                     <li class="team-item">
-                        <img class="team-photo" src="./images/Tom.jpg" alt="Toms`s photo" width="264">
+                        <img class="team-photo" src="./images/Tom.jpg" srcset="./images/Tom.jpg 1x, ./images/Tom@2x.jpg 2x" alt="Toms`s photo" width="264">
                         <div class="team-text-wrap">
                             <div class="team-info-wrap">
 
@@ -205,7 +210,7 @@
                     </li>
 
                     <li class="team-item">
-                        <img class="team-photo" src="./images/Camila.jpg" alt="Camila`s photo" width="264">
+                        <img class="team-photo" src="./images/Camila.jpg" srcset="./images/Camila.jpg 1x, ./images/Camila@2x.jpg 2x" alt="Camila`s photo" width="264">
                         <div class="team-text-wrap">
 
                             <div class="team-info-wrap">
@@ -249,7 +254,7 @@
                     </li>
 
                     <li class="team-item">
-                        <img class="team-photo" src="./images/Daniel.jpg" alt="Daniel`s photo" width="264">
+                        <img class="team-photo" src="./images/Daniel.jpg" srcset="./images/Daniel.jpg 1x, ./images/Daniel@2x.jpg 2x" alt="Daniel`s photo" width="264">
                         <div class="team-text-wrap">
                             <div class="team-info-wrap">
                                 <h3 class="team-name">Daniel Wilson</h3>
@@ -419,7 +424,7 @@
     <footer class="footer">
         <div class="container footer-container">
 
-            <div>
+            <div class="footer-brand">
                 <a class="footer-logo" href="./index.html"><span class="logo-accent">Web</span>Studio</a>
                 <p class="footer-text">Increase the flow of customers and sales for your business with digital marketing
                     & growth solutions.</p>
@@ -572,5 +577,69 @@
 </div>
 
 </body>
+<div class="mobile-menu">
+    <div class="mobile-menu-container">
+        <button type="button" class="mobile-menu-close" aria-label="Close mobile menu">
+            <svg class="close-svg" width="8" height="8">
+                <use href="./images/icons.svg#icon-close"></use>
+            </svg>
+        </button>
+
+        <nav class="mobile-nav">
+            <ul class="mobile-nav-list">
+                <li><a class="mobile-nav-link current" href="./index.html">Studio</a></li>
+                <li><a class="mobile-nav-link" href="">Portfolio</a></li>
+                <li><a class="mobile-nav-link" href="">Contacts</a></li>
+            </ul>
+        </nav>
+
+        <div class="mobile-bottom">
+            <address class="mobile-contacts">
+                <ul class="mobile-contacts-list">
+                    <li>
+                        <a class="mobile-contacts-link mobile-contacts-link--accent" href="tel:+110001111111">+11 (000)
+                            111-11-11</a>
+                    </li>
+                    <li>
+                        <a class="mobile-contacts-link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+                    </li>
+                </ul>
+            </address>
+
+            <ul class="mobile-socmedia-list">
+                <li>
+                    <a class="team-icons-wrap" href="https://www.instagram.com/">
+                        <svg width="16" height="16">
+                            <use href="./images/icons.svg#icon-instagram"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li>
+                    <a class="team-icons-wrap" href="https://www.twitter.com/">
+                        <svg width="16" height="16">
+                            <use href="./images/icons.svg#icon-twitter"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li>
+                    <a class="team-icons-wrap" href="https://www.facebook.com/">
+                        <svg width="16" height="16">
+                            <use href="./images/icons.svg#icon-facebook"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li>
+                    <a class="team-icons-wrap" href="https://www.linkedin.com/">
+                        <svg width="16" height="16">
+                            <use href="./images/icons.svg#icon-linkedin"></use>
+                        </svg>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<script src="./js/mobile-menu.js"></script>
 
 </html>
