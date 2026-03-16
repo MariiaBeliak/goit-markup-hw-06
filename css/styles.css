@@ -46,11 +46,11 @@ input {
 }
 
 .container {
-    max-width: 1158px;
-    padding-left: 15px;
-    padding-right: 15px;
-    margin-left: auto;
-    margin-right: auto;
+    max-width: 320px;
+        padding-left: 16px;
+        padding-right: 16px;
+        margin-left: auto;
+        margin-right: auto;
 }
 
 @media (min-width: 768px) {
@@ -123,13 +123,7 @@ body {
 
 
 .nav-list {
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.50;
-    letter-spacing: 0.02em;
-    display: flex;
-    gap: 40px;
-    margin-right: 332px;
+display: none;
 }
 
 @media (min-width: 768px) {
@@ -177,6 +171,7 @@ body {
 
 /* Styles for address */
 .contacts {
+    display: none;
     font-style: normal
 }
 
@@ -210,6 +205,9 @@ body {
 .contacts-link {
     display: block;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    font-size: 12px;
+        line-height: 1.17;
+        letter-spacing: 0.04em;
 }
 
 @media (min-width: 1158px) {
@@ -309,14 +307,15 @@ body {
 
 .main-title {
     font-weight: 700;
-    font-size: 56px;
     line-height: 1.07;
     letter-spacing: 0.02em;
     text-align: center;
     color: #fff;
     width: 496px;
-    margin: auto;
-    margin-bottom: 48px;
+    font-size: 36px;
+        line-height: 1.11;
+        max-width: 216px;
+        margin: 0 auto 72px;
 }
 
 @media (min-width: 768px) {
@@ -379,15 +378,16 @@ body {
 }
 
 .features-icons-wrap {
-    border: 1px solid #8e8f99;
+    /* border: 1px solid #8e8f99; */
     border-radius: 4px;
     background: #f4f4fd;
     padding: 24px 100px;
     margin-bottom: 8px;
-    display: flex;
+    /* display: flex; */
     align-items: center;
     justify-content: center;
-    height: 112px;
+    /* height: 112px; */
+    display: none;
 }
 
 @media (min-width: 1158px) {
@@ -979,7 +979,11 @@ body {
         visibility: visible;
         pointer-events: auto;
     }
-
+..mobile-menu{
+    opacity: 0;
+        visibility: hidden;
+        pointer-events: none;
+}
     @media (min-width: 768px) {
         .mobile-menu {
             display: none;
@@ -988,7 +992,7 @@ body {
 
 
     .modal {
-        width: 408px;
+        /* width: 408px; */
         min-height: 584px;
         border-radius: 4px;
         box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12), 0 2px 1px 0 rgba(0, 0, 0, 0.2);
@@ -999,8 +1003,10 @@ body {
         position: absolute;
         transform: translate(-50%, -50%);
         /*назад на половину СВОГО розміру*/
-        padding: 72px 24px 24px 24px;
+        /* padding: 72px 24px 24px 24px; */
         transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        width: 288px;
+            padding: 72px 16px 24px;
     }
 
     @media (min-width: 768px) {
