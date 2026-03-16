@@ -249,7 +249,7 @@ body {
     padding-bottom: 72px;
     background-image:
         linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
-        url("../images/people-office.jpg");
+        url("../images/people-office-mob.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -714,11 +714,9 @@ body {
 @media (min-width: 768px) {
     .footer-container {
         flex-direction: row;
-        flex-wrap: wrap;
-        align-items: baseline;
-        gap: 72px 24px;
-        padding-left: 108px;
-        padding-right: 108px;
+            flex-wrap: wrap;
+            align-items: baseline;
+            gap: 72px 24px;
     }
 }
 
