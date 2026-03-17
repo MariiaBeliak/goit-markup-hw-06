@@ -696,6 +696,11 @@ body {
     padding-top: 96px;
     padding-bottom: 96px;
 }
+@media (min-width: 768px) and (max-width: 1157px) {
+    .footer .container {
+        max-width: 584px;
+    }
+}
 
 @media (min-width: 1158px) {
     .footer {
@@ -724,8 +729,6 @@ body {
     .footer-container {
         flex-wrap: nowrap;
         gap: 0;
-        padding-left: 15px;
-        padding-right: 15px;
         align-items: baseline;
     }
 }
